@@ -1,0 +1,24 @@
+header {
+	background-color: $offWhite;
+}
+
+.logo a {
+	display: block;
+	width: 200px;
+	height: 172px;
+	background: url(../images/FedoraManlogosmall.png) no-repeat 0 0;
+	background-image: linear-gradient(transparent, transparent), url(../images/FedoraManlogo.svg);
+	text-indent: -9999px;
+	margin: 0 auto;
+}
+
+.contactMe {
+
+	margin: 0 auto;
+	
+	a {
+		color: black;
+		font-size: 1.2em;
+	}
+
+}

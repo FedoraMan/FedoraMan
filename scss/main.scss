@@ -1,7 +1,6 @@
-
-
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-}
+@import "variables";
+@import "mixins";
+@import "general";
+@import "header";
+@import "body";
+@import "footer";

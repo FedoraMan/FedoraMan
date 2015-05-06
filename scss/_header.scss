@@ -1,24 +1,30 @@
 header {
 	background-color: $offWhite;
+	padding-bottom: 10px;
+
 }
 
-.logo a {
-	display: block;
-	width: 200px;
-	height: 172px;
-	background: url(../images/FedoraManlogosmall.png) no-repeat 0 0;
-	background-image: linear-gradient(transparent, transparent), url(../images/FedoraManlogo.svg);
-	text-indent: -9999px;
-	margin: 0 auto;
+.logo  {
+	margin-top: 0;
+	a {
+		display: block;
+		width: 200px;
+		height: 236px;
+		background: url(../images/FedoraManlogosmall.png) no-repeat 0 0;
+		background-image: linear-gradient(transparent, transparent), url(../images/FedoraManlogo.svg);
+		text-indent: -9999px;
+		margin: 0 auto;
+	}
 }
 
 .contactMe {
 
-	margin: 0 auto;
+	text-align: center;
+	line-height: 1;
 	
 	a {
 		color: black;
-		font-size: 1.2em;
+		font-size: 1.5em;
 	}
 
 }

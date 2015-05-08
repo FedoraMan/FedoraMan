@@ -1,5 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Duru+Sans);
 
+* {
+  box-sizing: border-box;
+}
+
 html {
     color: #222;
     font-size: 1em;
@@ -22,4 +26,5 @@ html {
 .contain {
 	margin: 0 auto;
 	width: 90%;
+  max-width: 980px;
 }

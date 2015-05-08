@@ -2,10 +2,19 @@ header {
 	background-color: $offWhite;
 	padding-bottom: 10px;
 
+	@include breakpoint($small) {
+		padding-bottom: 258px;
+	}
+
 }
 
 .logo  {
 	margin-top: 0;
+
+	@include breakpoint($small){
+		float: left;
+		margin-left: 40px;
+	}
 	a {
 		display: block;
 		width: 200px;
@@ -14,6 +23,7 @@ header {
 		background-image: linear-gradient(transparent, transparent), url(../images/FedoraManlogo.svg);
 		text-indent: -9999px;
 		margin: 0 auto;
+
 	}
 }
 
@@ -21,6 +31,13 @@ header {
 
 	text-align: center;
 	line-height: 1;
+
+	@include breakpoint($small) {
+		float: right;
+		margin-right: 40px;
+		margin-top: 50px;
+		text-align: left;
+	}
 	
 	a {
 		color: black;

@@ -1,10 +1,30 @@
 ul {
 	list-style: none;
 	padding-left: 0;
+	text-align: center;
+
+
 
 	li {
 		padding-bottom: 7px;
+
+		@include breakpoint($medium){
+			display: inline-block;
+		}
+
+		img {
+		width: 300px;
+
+		@include breakpoint($medium){
+			width: 236px;
+  		    margin: 20px;
+		}
+		}
 	}
+}
+
+main {
+	clear: both;
 }
 
 .work {
@@ -13,10 +33,6 @@ ul {
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	
-	img {
-		width: 80%;
-	}
 
 }
 
@@ -26,15 +42,43 @@ ul {
 	padding-top: 20px;
 	padding-bottom: 20px;
 
+	@include breakpoint($medium){
+			padding-bottom: 290px;
+		}
+
 	img {
 		width: 300px;
 		border-radius: 50%;
+
+		@include breakpoint($medium){
+			float: left;
+			margin-left: 20px;
+		}
 	}
 
-	p {
-		text-align: left;
-		margin: 0 auto;
-		width: 90%;
+	.aboutme {
+
+		@include breakpoint($medium){
+			margin-right: 20px;
+		}
+
+		h2 {
+			@include breakpoint($medium){
+				margin-top: 45px;
+			}
+		}
+
+		p {
+			text-align: left;
+			margin: 0 auto;
+			width: 90%;
+			max-width: 600px;
+
+			@include breakpoint($medium){
+				float: right;
+				width: 50%;
+			}
+		}
 	}
 }
 
@@ -43,14 +87,45 @@ ul {
 	color: #fff;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	clear: both;
 
-	h2 {
+	@include breakpoint($medium){
+		padding-bottom: 120px;
+	}
+
+	.tech {
+
+		@include breakpoint($medium){
+			width: 40%;
+			float: left;
+			margin-left: 55px
+		}
+
+		h2 {
 		margin-top: 0;
 		margin-bottom: 4px;
 	}
 
 	p {
 		margin-top: 5px;
+	}
+	}
+
+	.skillz {
+
+		@include breakpoint($medium){
+			float: right;
+			width: 50%;
+		}
+
+		h2 {
+		margin-top: 0;
+		margin-bottom: 4px;
+	}
+
+	p {
+		margin-top: 5px;
+	}
 	}
 
 }

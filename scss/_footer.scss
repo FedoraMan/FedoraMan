@@ -4,9 +4,20 @@ footer {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	text-align: center;
+	clear: both;
+
+	@include breakpoint($small){
+		padding-bottom: 162px;
+	}
 
 	h2 {
 		margin-top: 0;
+
+		@include breakpoint($small){
+			margin-top: 76px;
+			margin-left: 40px;
+			float: left;
+		}
 	}
 	
 	.contactMe a {

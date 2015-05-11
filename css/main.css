@@ -65,12 +65,12 @@ ul {
   text-align: center; }
   ul li {
     padding-bottom: 7px; }
-    @media (min-width: 840px) {
+    @media (min-width: 931px) {
       ul li {
         display: inline-block; } }
     ul li img {
       width: 300px; }
-      @media (min-width: 840px) {
+      @media (min-width: 931px) {
         ul li img {
           width: 236px;
           margin: 20px; } }
@@ -144,6 +144,62 @@ main {
     margin-bottom: 4px; }
   .skills .skillz p {
     margin-top: 5px; }
+
+.maincont {
+  color: #fff;
+  background-color: #28313a;
+  text-align: center;
+  padding-bottom: 10px; }
+  @media (min-width: 840px) {
+    .maincont {
+      padding-bottom: 315px; } }
+  .maincont h1 {
+    margin-top: 0; }
+  .maincont .contImg {
+    width: 360px; }
+    @media (min-width: 740px) {
+      .maincont .contImg {
+        width: 600px; } }
+    @media (min-width: 840px) {
+      .maincont .contImg {
+        float: left;
+        width: 45%; } }
+  .maincont .contWord {
+    text-align: left; }
+    @media (min-width: 840px) {
+      .maincont .contWord {
+        width: 45%;
+        max-width: 450px;
+        float: right; } }
+    .maincont .contWord a {
+      color: #fff; }
+
+.pages {
+  margin-bottom: 0; }
+
+.screenshots {
+  background-color: #4b5e6c;
+  padding-top: 1px;
+  padding-bottom: 20px;
+  color: #fff;
+  clear: both; }
+
+.nextpage {
+  background-color: #4b5e6c;
+  padding: 35px; }
+  .nextpage a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4em; }
+  .nextpage .left {
+    position: absolute;
+    left: 0; }
+  .nextpage .right {
+    position: absolute;
+    right: 0; }
+
+.special {
+  position: relative; }
 
 footer {
   background-color: #28313a;

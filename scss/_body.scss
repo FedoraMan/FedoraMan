@@ -8,14 +8,14 @@ ul {
 	li {
 		padding-bottom: 7px;
 
-		@include breakpoint($medium){
+		@include breakpoint($listInline){
 			display: inline-block;
 		}
 
 		img {
 		width: 300px;
 
-		@include breakpoint($medium){
+		@include breakpoint($listInline){
 			width: 236px;
   		    margin: 20px;
 		}
@@ -128,4 +128,85 @@ main {
 	}
 	}
 
+}
+
+///////////Content Pages////////////////////////
+
+.maincont {
+	color: #fff;
+	background-color: $footer;
+	text-align: center;
+	padding-bottom: 10px;
+
+	@include breakpoint($medium) {
+		padding-bottom: 315px;
+	}
+
+	h1 {
+		margin-top: 0;
+	}
+
+	.contImg {
+		width: 360px;
+
+		@include breakpoint($small) {
+			width: 600px;
+		}
+
+		@include breakpoint($medium){
+			float: left;
+			width: 45%;
+		}
+	}
+
+	.contWord {
+		text-align: left;
+
+		@include breakpoint($medium) {
+			width: 45%;
+			max-width: 450px;
+			float: right;
+		}
+
+		a {
+			color: #fff;
+		}
+	}
+}
+
+.pages {
+	margin-bottom: 0;
+}
+
+.screenshots {
+	background-color: $main;
+	padding-top: 1px;
+	padding-bottom: 20px;
+	color: #fff;
+	clear: both;
+}
+
+.nextpage {
+	background-color: $main;
+	padding: 35px;
+
+	a {
+		text-decoration: none;
+		color: #fff;
+		font-size: 1.4em;
+	}
+
+	.left {
+		position: absolute;
+		left: 0;
+	}
+
+	.right {
+		position: absolute;
+		right: 0;
+	}
+}
+
+.special {
+	position: relative;
 }

@@ -56,8 +56,28 @@ header {
       margin-top: 50px;
       text-align: left; } }
   .contactMe a {
+    margin-right: 10px;
+    margin-bottom: 16px;
     color: black;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    width: 24px;
+    height: 24px;
+    text-align: center; }
+    @media (min-width: 840px) {
+      .contactMe a {
+        float: left;
+        display: block;
+        -webkit-transform: 0.2s ease-out;
+        -moz-transition: 0.2s ease-out;
+        -o-transition: 0.2s ease-out;
+        transition: 0.2s ease-out; }
+        .contactMe a:hover {
+          -webkit-transform: scale(1.4);
+          -moz-transform: scale(1.4);
+          -o-transform: scale(1.4);
+          transform: scale(1.4); } }
+  .contactMe p {
+    clear: both; }
 
 ul {
   list-style: none;
@@ -70,6 +90,21 @@ ul {
         display: inline-block; } }
     ul li img {
       width: 300px; }
+      @media (min-width: 840px) {
+        ul li img {
+          -webkit-transition: 0.2s ease-out;
+          -moz-transition: 0.2s ease-out;
+          -o-transition: 0.2s ease-out;
+          transition: 0.2s ease-out; }
+          ul li img:hover {
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            transform: scale(1.2);
+            -webkit-box-shadow: 0px 0px 30px #333;
+            -moz-box-shadow: 0px 0px 30px #333;
+            -o-box-shadow: 0px 0px 30px #333;
+            box-shadow: 0px 0px 30px #333; } }
       @media (min-width: 931px) {
         ul li img {
           width: 236px;
@@ -92,29 +127,25 @@ main {
   padding-bottom: 20px; }
   @media (min-width: 840px) {
     .me {
-      padding-bottom: 290px; } }
+      padding-bottom: 235px; } }
   .me img {
     width: 300px;
     border-radius: 50%; }
     @media (min-width: 840px) {
       .me img {
         float: left;
-        margin-left: 20px; } }
+        margin-left: 20px;
+        margin-right: 10%; } }
   @media (min-width: 840px) {
     .me .aboutme {
       margin-right: 20px; } }
   @media (min-width: 840px) {
     .me .aboutme h2 {
-      margin-top: 45px; } }
+      margin-top: 45px;
+      text-align: left; } }
   .me .aboutme p {
     text-align: left;
-    margin: 0 auto;
-    width: 90%;
-    max-width: 600px; }
-    @media (min-width: 840px) {
-      .me .aboutme p {
-        float: right;
-        width: 50%; } }
+    margin: 0 auto; }
 
 .skills {
   background-color: #4b5e6c;
@@ -124,7 +155,8 @@ main {
   clear: both; }
   @media (min-width: 840px) {
     .skills {
-      padding-bottom: 120px; } }
+      padding-bottom: 120px;
+      padding-top: 40px; } }
   @media (min-width: 840px) {
     .skills .tech {
       width: 40%;
@@ -180,17 +212,31 @@ main {
 .screenshots {
   background-color: #4b5e6c;
   padding-top: 1px;
-  padding-bottom: 20px;
+  padding-bottom: 1px;
   color: #fff;
   clear: both; }
 
 .nextpage {
   background-color: #4b5e6c;
-  padding: 35px; }
+  padding: 35px;
+  padding-bottom: 45px; }
   .nextpage a {
     text-decoration: none;
     color: #fff;
     font-size: 1.4em; }
+    @media (min-width: 840px) {
+      .nextpage a {
+        float: left;
+        display: block;
+        -webkit-transform: 0.2s ease-out;
+        -moz-transition: 0.2s ease-out;
+        -o-transition: 0.2s ease-out;
+        transition: 0.2s ease-out; }
+        .nextpage a:hover {
+          -webkit-transform: scale(1.4);
+          -moz-transform: scale(1.4);
+          -o-transform: scale(1.4);
+          transform: scale(1.4); } }
   .nextpage .left {
     position: absolute;
     left: 0; }
@@ -217,7 +263,8 @@ footer {
       footer h2 {
         margin-top: 76px;
         margin-left: 40px;
-        float: left; } }
+        float: left;
+        font-size: 2em; } }
   footer .contactMe a {
     color: #fff; }
 

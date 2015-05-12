@@ -40,8 +40,38 @@ header {
 	}
 	
 	a {
+		
+		
+		margin-right: 10px;
+		margin-bottom: 16px;
 		color: black;
 		font-size: 1.5em;
+		width: 24px;
+		height: 24px;
+		text-align: center;
+
+		@include breakpoint($medium){
+			float: left;
+			display: block;
+			-webkit-transform: 0.2s ease-out; 
+  			-moz-transition: 0.2s ease-out;
+  			-o-transition: 0.2s ease-out;
+  			transition: 0.2s ease-out;
+
+			&:hover {
+				-webkit-transform:scale(1.4);
+				-moz-transform:scale(1.4);
+				-o-transform:scale(1.4);
+				transform:scale(1.4);
+
+
+			}
+		}
 	}
 
+
+	p { 
+		clear: both;
+	}
 }
+

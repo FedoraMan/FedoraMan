@@ -209,7 +209,7 @@ main {
       .maincont h1 {
         display: none; } }
   .maincont .contImg {
-    width: 360px; }
+    width: 95%; }
     @media (min-width: 740px) {
       .maincont .contImg {
         width: 600px; } }

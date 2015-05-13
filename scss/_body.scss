@@ -22,10 +22,10 @@ ul {
 			transition: 0.2s ease-out;
 
 			&:hover {
-				-webkit-transform:scale(1.2);
-				-moz-transform:scale(1.2);
-				-o-transform:scale(1.2);
-				transform:scale(1.2);
+				-webkit-transform:scale(1.1);
+				-moz-transform:scale(1.1);
+				-o-transform:scale(1.1);
+				transform:scale(1.1);
 				-webkit-box-shadow:0px 0px 30px #333;
 				-moz-box-shadow:0px 0px 30px #333;
 				-o-box-shadow:0px 0px 30px #333;
@@ -42,6 +42,27 @@ ul {
 	}
 }
 
+.recentWork {
+
+	@include breakpoint($medium){
+			-webkit-transition: 0.2s ease-out;
+			-moz-transition: 0.2s ease-out;
+			-o-transition: 0.2s ease-out;
+			transition: 0.2s ease-out;
+
+			&:hover {
+				-webkit-transform:scale(1.2);
+				-moz-transform:scale(1.2);
+				-o-transform:scale(1.2);
+				transform:scale(1.2);
+				-webkit-box-shadow:0px 0px 30px #333;
+				-moz-box-shadow:0px 0px 30px #333;
+				-o-box-shadow:0px 0px 30px #333;
+				box-shadow:0px 0px 30px #333;
+			}
+		}
+
+}
 
 
 main {
@@ -159,13 +180,19 @@ main {
 	background-color: $footer;
 	text-align: center;
 	padding-bottom: 10px;
+	padding-top: 20px;
 
 	@include breakpoint($medium) {
 		padding-bottom: 315px;
+		padding-top: 30px;
 	}
 
 	h1 {
 		margin-top: 0;
+
+		@include breakpoint($medium){
+			display: none;
+		}
 	}
 
 	.contImg {
@@ -192,6 +219,25 @@ main {
 
 		a {
 			color: #fff;
+
+			@include breakpoint($medium){
+			-webkit-transform: color 0.2s ease-out; 
+  			-moz-transition: color 0.2s ease-out;
+  			-o-transition: color 0.2s ease-out;
+  			transition: color 0.2s ease-out;
+
+			&:hover {
+				color: #89A7C6;
+			}
+		}
+	}
+
+		h1 {
+			display: none;
+
+			@include breakpoint($medium){
+				display: block;
+			}
 		}
 	}
 }
@@ -227,10 +273,10 @@ main {
   			transition: 0.2s ease-out;
 
 			&:hover {
-				-webkit-transform:scale(1.4);
-				-moz-transform:scale(1.4);
-				-o-transform:scale(1.4);
-				transform:scale(1.4);
+				-webkit-transform:scale(1.2);
+				-moz-transform:scale(1.2);
+				-o-transform:scale(1.2);
+				transform:scale(1.2);
 
 
 			}

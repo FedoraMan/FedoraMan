@@ -7,14 +7,15 @@ footer {
 	clear: both;
 
 	@include breakpoint($small){
-		padding-bottom: 162px;
+		padding-bottom: 172px;
+		padding-top: 0;
 	}
 
 	h2 {
 		margin-top: 0;
 
 		@include breakpoint($small){
-			margin-top: 76px;
+			margin-top: 50px;
 			margin-left: 40px;
 			float: left;
 			font-size: 2em;
